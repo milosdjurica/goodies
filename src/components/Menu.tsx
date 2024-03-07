@@ -1,23 +1,24 @@
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Button } from "./ui/button";
+import Item from "./Item";
 
 export default function Menu() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="m-2 flex flex-col items-center justify-center border">
       <h3>Menu</h3>
       <div className="">
-        <Tabs defaultValue="account" className="w-full min-w-full border ">
-          <TabsList>
-            <TabsTrigger value="account">Account</TabsTrigger>
-            <TabsTrigger value="account">Account</TabsTrigger>
-            <TabsTrigger value="account">Account</TabsTrigger>
-            <TabsTrigger value="password">Password</TabsTrigger>
-          </TabsList>
-          <TabsContent value="account">
-            Make changes to your account here.
-          </TabsContent>
-          <TabsContent value="password">Change your password here.</TabsContent>
-        </Tabs>
+        <Button variant="secondary">Button</Button>
+        <Button variant="secondary">Button</Button>
+        <Button variant="secondary">Button</Button>
+        <Button variant="secondary">Button</Button>
+        <Button variant="secondary">Button</Button>
+      </div>
+      <div className="flex min-w-full flex-wrap items-center justify-around">
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
       </div>
     </div>
   );
