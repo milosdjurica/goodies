@@ -2,12 +2,11 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
-      <h3>About Goodies</h3>
-      <div>
-        <h6>Address</h6>
-        <h6>Phone</h6>
-        <h6>Open from 10:00 to 20:00</h6>
+    <div className="mx-auto flex flex-col space-y-5 md:w-[90%] ">
+      <div className="">
+        <h6>Address: Ćirpanova 14</h6>
+        <h6>Phone: 061 234 567</h6>
+        <h6>09:00-18:30</h6>
       </div>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima cum
