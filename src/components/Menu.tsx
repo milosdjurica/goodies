@@ -1,6 +1,7 @@
 import React from "react";
 import Item from "./Item";
 import Buttons from "./Buttons";
+import ItemsWithHeader from "./ui/ItemsWithHeader";
 
 export default function Menu() {
   return (
@@ -9,23 +10,9 @@ export default function Menu() {
       {/* <Buttons /> */}
       {/* // ! create component for this Item+Header and add passing props and use GRID ---> NO FLEX */}
       <div className="w-full">
-        <h4 className=" pl-8 text-start underline">Corn dog</h4>
-        <div className="flex min-w-full flex-wrap items-center justify-around">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-        </div>
-      </div>
-      <div>
-        <h4 className="pl-8 text-start underline">Ostalo</h4>
-        <div className="flex min-w-full flex-wrap items-center justify-around">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-        </div>
+        {/* //! Props with items and header */}
+        <ItemsWithHeader />
+        <ItemsWithHeader />
       </div>
     </div>
   );
