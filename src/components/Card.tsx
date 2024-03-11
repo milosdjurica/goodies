@@ -12,7 +12,10 @@ export function Card() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="m-3 h-[250px] w-[330px] cursor-pointer rounded-lg border">
+        <div
+          className="m-3 h-[250px] w-[330px] cursor-pointer rounded-lg 
+        border transition ease-out hover:scale-105"
+        >
           <div className="relative h-2/3 w-full">
             <Image
               alt="corn dog"
