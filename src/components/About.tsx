@@ -5,7 +5,7 @@ export default function About() {
     <div className="mx-auto flex flex-col space-y-5 md:w-[90%] ">
       <div className="">
         <h6>09:00-18:30</h6>
-        <h6>Address: Ćirpanova 14</h6>
+        <h6>Address: Adresa 1234</h6>
         <h6>Phone: 061 234 567</h6>
       </div>
       <p>
