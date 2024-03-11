@@ -15,6 +15,7 @@ import {
 import "./globals.css";
 import { ThemeProvider } from "@/components/Theme-provider";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 // const amaticSC = Amatic_SC({ subsets: ["latin"], weight: ["400", "700"] });
@@ -48,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${kalam.className} min-h-screen p-2`}>
+      <body className={`${kalam.className} min-h-screen `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -57,6 +58,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

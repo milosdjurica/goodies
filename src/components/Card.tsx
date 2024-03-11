@@ -31,7 +31,7 @@ export function Card() {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-2/3 max-w-[90%] rounded-lg sm:max-w-[425px]">
+      <DialogContent className="max-w-[90%] rounded-lg sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Corn dog Mozzarella</DialogTitle>
           <DialogDescription>
